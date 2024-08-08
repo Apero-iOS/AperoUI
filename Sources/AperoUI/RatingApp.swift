@@ -7,14 +7,17 @@
 
 import UIKit
 
+
 public class RatingApp: UIView {
     
+    @IBOutlet var clearView: UIView!
     @IBOutlet var contentView: UIView!
+    
     @IBOutlet weak var iconAppImageView: UIImageView!
     @IBOutlet weak var titleAppLable: UILabel!
     @IBOutlet weak var contentAppLable: UILabel!
     @IBOutlet weak var starStackView: UIStackView!
-    @IBOutlet weak var rateUsButton: UIButton!
+    @IBOutlet weak var rateUsButton: UIButton! 
     @IBOutlet weak var rateContainStackView: UIView!
     
     @IBOutlet weak var button1: UIButton!
@@ -46,13 +49,13 @@ public class RatingApp: UIView {
     private func setupView(){
         Bundle.AperoUI.loadNibNamed("RatingApp", owner: self)
         backgroundColor = .clear
-        addSubview(contentView)
-        contentView.frame = self.bounds
+        addSubview(clearView)
+        clearView.frame = self.bounds
         contentView.layer.cornerRadius = 14
         contentView.layer.masksToBounds = true
         contentView.clipsToBounds = true
         rateContainStackView.borders(for: [.top, .bottom], width: 0.33, color: UIColor("3C3C43", alpha: 0.36))
-        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        clearView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         setButton()
         setUpBlur()
         handleRateUs()
@@ -77,11 +80,11 @@ public class RatingApp: UIView {
     private func handleRateUs(){
         rateUsButton.addTarget(self, action: #selector(rateUsHandle), for: .touchUpInside)
     }
+    
     @objc private func rateUsHandle(){
         onRate?(starRate)
     }
     @IBAction func handleActionclickStar(_ sender: UIButton) {
-      
         switch sender{
         case button1:
             button1.setImage(selectedImageButton, for: .normal)
@@ -111,7 +114,6 @@ public class RatingApp: UIView {
             button4.setImage(selectedImageButton, for: .normal)
             button5.setImage(normalImageButton, for: .normal)
             starRate = 4
-
         case button5:
             button1.setImage(selectedImageButton, for: .normal)
             button2.setImage(selectedImageButton, for: .normal)
