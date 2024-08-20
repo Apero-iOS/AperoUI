@@ -21,19 +21,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wob-lf-e0d" customClass="RatingApp" customModule="AperoUI">
-                    <rect key="frame" x="61.666666666666657" y="298" width="270" height="256"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="270" id="7jo-SL-Z0l"/>
-                        <constraint firstAttribute="height" constant="256" id="8yS-pL-OCh"/>
-                    </constraints>
                 </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <viewLayoutGuide key="safeArea" id="nBM-Mv-FNg"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="wob-lf-e0d" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qf7-3j-8E7"/>
-                <constraint firstItem="wob-lf-e0d" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yjq-XP-TBy"/>
+                <constraint firstItem="wob-lf-e0d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8VJ-Bw-rwH"/>
+                <constraint firstItem="wob-lf-e0d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HID-gV-mLg"/>
+                <constraint firstAttribute="bottom" secondItem="wob-lf-e0d" secondAttribute="bottom" id="cR8-Yp-q7A"/>
+                <constraint firstAttribute="trailing" secondItem="wob-lf-e0d" secondAttribute="trailing" id="mmy-mj-UuS"/>
             </constraints>
             <point key="canvasLocation" x="164" y="8"/>
         </view>
