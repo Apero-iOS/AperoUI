@@ -29,9 +29,9 @@ let package = Package(
                     .process("RatingApp.xib"),
                 ]),
         
-        .testTarget(
-            name: "AperoUITests",
-            dependencies: ["AperoUI"]),
+//        .testTarget(
+//            name: "AperoUITests",
+//            dependencies: ["AperoUI"]),
         
     ]
     

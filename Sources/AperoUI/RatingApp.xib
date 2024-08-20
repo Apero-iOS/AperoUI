@@ -25,18 +25,18 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="270" height="256"/>
+            <rect key="frame" x="0.0" y="0.0" width="276" height="259"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_rating" translatesAutoresizingMaskIntoConstraints="NO" id="drz-oh-HD4">
-                    <rect key="frame" x="109" y="19" width="52" height="52"/>
+                    <rect key="frame" x="112" y="19" width="52" height="52"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="0JC-R7-viT"/>
                         <constraint firstAttribute="width" constant="52" id="cWm-lO-cyH"/>
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ULz-BG-xNw" userLabel="Stack ViewText">
-                    <rect key="frame" x="35.666666666666657" y="83" width="199" height="69"/>
+                    <rect key="frame" x="38.666666666666657" y="83" width="199" height="69"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoying SwiftPDF?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaA-db-Q88">
                             <rect key="frame" x="0.0" y="0.0" width="199" height="20.333333333333332"/>
@@ -55,10 +55,10 @@ App store.</string>
                     </subviews>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqt-sU-1xO" userLabel="RateView">
-                    <rect key="frame" x="0.0" y="167" width="270" height="44"/>
+                    <rect key="frame" x="0.0" y="167" width="276" height="44"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7cL-Iv-MBQ" userLabel="Stack ViewRate">
-                            <rect key="frame" x="43" y="10" width="184" height="24"/>
+                            <rect key="frame" x="46" y="10" width="184" height="24"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1r-zX-GxK">
                                     <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -122,12 +122,38 @@ App store.</string>
                                 </button>
                             </subviews>
                         </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTC-8N-BTi">
+                            <rect key="frame" x="0.0" y="0.0" width="276" height="0.66666666666666663"/>
+                            <color key="backgroundColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.59999999999999998" id="9NY-kO-jeo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxc-h3-FvG">
+                            <rect key="frame" x="0.0" y="43.666666666666657" width="276" height="0.3333333333333357"/>
+                            <color key="backgroundColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="Nmm-fU-YCa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="QTC-8N-BTi" firstAttribute="top" secondItem="eqt-sU-1xO" secondAttribute="top" id="34W-Sl-cdj"/>
                         <constraint firstItem="7cL-Iv-MBQ" firstAttribute="centerX" secondItem="eqt-sU-1xO" secondAttribute="centerX" id="7T4-r7-JqB"/>
-                        <constraint firstItem="7cL-Iv-MBQ" firstAttribute="top" secondItem="eqt-sU-1xO" secondAttribute="top" constant="10" id="YS1-XC-LNz"/>
-                        <constraint firstAttribute="bottom" secondItem="7cL-Iv-MBQ" secondAttribute="bottom" constant="10" id="cjI-Rc-k8j"/>
+                        <constraint firstItem="7cL-Iv-MBQ" firstAttribute="top" secondItem="eqt-sU-1xO" secondAttribute="top" constant="10" id="7oi-cd-ch6"/>
+                        <constraint firstItem="QTC-8N-BTi" firstAttribute="leading" secondItem="eqt-sU-1xO" secondAttribute="leading" id="9OK-HY-G8Y"/>
+                        <constraint firstAttribute="trailing" secondItem="Kxc-h3-FvG" secondAttribute="trailing" id="Osb-d2-Nnz"/>
+                        <constraint firstAttribute="bottom" secondItem="7cL-Iv-MBQ" secondAttribute="bottom" constant="10" id="PU4-cg-8ZS"/>
+                        <constraint firstAttribute="bottom" secondItem="Kxc-h3-FvG" secondAttribute="bottom" id="guS-D1-xLo"/>
+                        <constraint firstItem="Kxc-h3-FvG" firstAttribute="leading" secondItem="eqt-sU-1xO" secondAttribute="leading" id="hjC-nd-4My"/>
+                        <constraint firstAttribute="trailing" secondItem="QTC-8N-BTi" secondAttribute="trailing" id="pFc-ov-IGb"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="XborderColor">
@@ -136,7 +162,7 @@ App store.</string>
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auR-2s-foH">
-                    <rect key="frame" x="94.666666666666686" y="211" width="81" height="45"/>
+                    <rect key="frame" x="97.666666666666686" y="212" width="81" height="47"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Rate us"/>
                 </button>
@@ -152,11 +178,11 @@ App store.</string>
                 <constraint firstItem="eqt-sU-1xO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aLs-6D-lwk"/>
                 <constraint firstItem="ULz-BG-xNw" firstAttribute="top" secondItem="drz-oh-HD4" secondAttribute="bottom" constant="12" id="d2u-KK-mEH"/>
                 <constraint firstItem="eqt-sU-1xO" firstAttribute="top" secondItem="ULz-BG-xNw" secondAttribute="bottom" constant="15" id="k3v-jz-Zo6"/>
-                <constraint firstItem="auR-2s-foH" firstAttribute="top" secondItem="eqt-sU-1xO" secondAttribute="bottom" id="q3s-RU-JN3"/>
+                <constraint firstItem="auR-2s-foH" firstAttribute="top" secondItem="eqt-sU-1xO" secondAttribute="bottom" constant="1" id="q3s-RU-JN3"/>
                 <constraint firstItem="drz-oh-HD4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="sS5-Kp-7Zs"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-150" y="39"/>
+            <point key="canvasLocation" x="-146.56488549618319" y="39.7887323943662"/>
         </view>
     </objects>
     <resources>

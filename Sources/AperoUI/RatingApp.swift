@@ -51,7 +51,6 @@ public class RatingApp: UIView {
         contentView.layer.cornerRadius = 14
         contentView.layer.masksToBounds = true
         contentView.clipsToBounds = true
-        rateContainStackView.borders(for: [.top, .bottom], width: 0.33, color: UIColor("3C3C43", alpha: 0.36))
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         setButton()
         setUpBlur()
